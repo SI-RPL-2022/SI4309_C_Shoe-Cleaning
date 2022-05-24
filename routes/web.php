@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 // Main
 Route::get('/', [Controller::class, 'index']);
+
+// Register
+Route::get('/Register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/Register', [RegisterController::class, 'store']);

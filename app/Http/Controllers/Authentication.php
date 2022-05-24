@@ -10,4 +10,9 @@ class Authentication extends Controller
     {
         return view('pages.home', ['pages' => 'Home']);
     }
+
+    public function registerPage()
+    {
+        return view('pages.login&register.register');
+    }
 }
