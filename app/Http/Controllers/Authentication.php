@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
@@ -16,7 +17,9 @@ class Authentication extends Controller
 
     public function indexAdmin()
     {
-        return view('pages.admin.home', ['pages' => 'Home']);
+        $orders = DB::table('orders')->where('status_cucian', '!=', 'Selesai')->orderBy('created_at', 'asc')->get();
+
+        return view('pages.admin.home', ['pages' => 'Home'], compact('orders'));
     }
 
     public function registerPage()
