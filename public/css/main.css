@@ -221,3 +221,38 @@ body {
     color: #ffffff;
 }
 /* Footer */
+
+/* /FOR SERVICES/ */
+
+#img-service {
+    width: 242px;
+    height: 353px;
+}
+
+#ServiceTitle {
+    font-size: 30px;
+    font-weight: 500;
+    color: #504a4a;
+}
+
+#ServicePrice {
+    font-size: 23px;
+    color: #504a4a;
+}
+
+#ServiceDesc {
+    font-size: 14px;
+    color: #504a4a;
+}
+
+#jumlah {
+    font-size: 14px;
+    width: 110px;
+    color: #504a4a;
+}
+
+#buttonservice {
+    font-size: 15px;
+    background-color: #8f5bd8;
+    color: #ffffff;
+}
