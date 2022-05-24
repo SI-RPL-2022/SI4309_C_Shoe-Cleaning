@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class Authentication extends Controller
 {
-    //
+    public function index()
+    {
+        return view('pages.home', ['pages' => 'Home']);
+    }
 }
