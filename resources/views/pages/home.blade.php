@@ -181,21 +181,14 @@
 
         <!-- Row 2 -->
         <div class="row justify-content-around pt-5">
-            <div class="col-4">
-                <div class="text-center pb-3">
-                    <img id="img-team" src="images/ica.png" alt="">
-                </div>
-                <h4 id="name" class="text-center">Luh Putu Kartika Yasa Putri</h4>
-                <p id="role" class="text-center">UX Researcher</p>
-            </div>
-            <div class="col-4">
+            <div class="col-5">
                 <div class="text-center pb-3">
                     <img id="img-team" src="images/hadi.png" alt="">
                 </div>
                 <h4 id="name" class="text-center">Hadi Noerddien Jayanto</h4>
                 <p id="role" class="text-center">Data Engineer</p>
             </div>
-            <div class="col-4">
+            <div class="col-5">
                 <div class="text-center pb-3">
                     <img id="img-team" src="images/harun.png" alt="">
                 </div>
