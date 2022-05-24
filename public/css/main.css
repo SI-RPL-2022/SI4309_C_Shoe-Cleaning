@@ -256,3 +256,28 @@ body {
     background-color: #8f5bd8;
     color: #ffffff;
 }
+
+/* Checkouts */
+#order-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #504a4a;
+}
+
+#order-desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: #a6a4a4;
+}
+
+#order-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #504a4a;
+}
+
+#submit-checkout {
+    font-size: 15px;
+    background-color: #8f5bd8;
+    color: #ffffff;
+}
