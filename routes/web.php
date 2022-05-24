@@ -23,6 +23,6 @@ Route::get('/Register', [Authentication::class, 'registerPage'])->middleware('gu
 Route::post('/Register', [Authentication::class, 'store']);
 
 // User
-Route::get('/Login', [Authentication::class, 'index'])->middleware('guest');
+Route::get('/Login', [Authentication::class, 'loginPage'])->middleware('guest');
 Route::post('/Login', [Authentication::class, 'authenticate'])->name('login-user');
 Route::post('/Logout', [Authentication::class, 'logout']);
