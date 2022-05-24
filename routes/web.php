@@ -34,3 +34,4 @@ Route::get('/HomeAdmin', [Authentication::class, 'indexAdmin'])->middleware('is_
 // Service User
 Route::get('/Service', [Customer::class, 'service']);
 Route::get('/Order', [Customer::class, 'order'])->middleware('auth');
+Route::post('/Order', [MainController::class, 'store'])->middleware('auth')->name('checkouts');
