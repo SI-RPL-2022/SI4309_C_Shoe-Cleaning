@@ -65,3 +65,30 @@ body {
     color: #504a4a;
 }
 /* Table */
+
+/* Footer */
+#footer {
+    background: #8f5bd8;
+}
+
+#shoecleaning-footer {
+    font-family: "Londrina Solid", cursive;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#desc-col1 {
+    font-size: 17px;
+}
+
+#footer-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#desc-col1 {
+    font-size: 14px;
+    color: #ffffff;
+}
+/* Footer */

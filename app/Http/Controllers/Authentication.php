@@ -14,6 +14,11 @@ class Authentication extends Controller
         return view('pages.home', ['pages' => 'Home']);
     }
 
+    public function indexAdmin()
+    {
+        return view('pages.admin.home', ['pages' => 'Home']);
+    }
+
     public function registerPage()
     {
         return view('pages.login&register.register');
