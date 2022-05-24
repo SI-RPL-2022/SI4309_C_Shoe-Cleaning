@@ -34,4 +34,9 @@ class Authentication extends Controller
         User::create($validatedData);
         return redirect('/Login')->with('success', 'Registrasi Berhasil Silahkan Login');
     }
+
+    public function loginPage()
+    {
+        return view('pages.login&register.login', ['pages' => 'Home']);
+    }
 }
