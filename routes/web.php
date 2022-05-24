@@ -33,3 +33,4 @@ Route::get('/HomeAdmin', [Authentication::class, 'indexAdmin'])->middleware('is_
 
 // Service User
 Route::get('/Service', [Customer::class, 'service']);
+Route::get('/Order', [MainController::class, 'order'])->middleware('auth');
