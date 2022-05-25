@@ -9,6 +9,9 @@
         <div class="container" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
                 <li class="nav-item pe-5">
+                    <a id="nav-item" class="nav-link" href="/Product">PRODUCT</a>
+                </li>
+                <li class="nav-item pe-5">
                     <a id="nav-item" class="nav-link" href="/HomeAdmin">DATA
                         PESANAN</a>
                 </li>
