@@ -31,6 +31,7 @@ Route::post('/Logout', [Authentication::class, 'logout']);
 
 // Admin
 Route::get('/HomeAdmin', [Admin::class, 'indexAdmin'])->middleware('is_admin');
+Route::get('/Product', [Admin::class, 'product'])->middleware('is_admin');
 
 // Service User
 Route::get('/Service', [Customer::class, 'service']);
