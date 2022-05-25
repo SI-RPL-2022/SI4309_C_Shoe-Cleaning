@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin;
 use App\Http\Controllers\Authentication;
 use App\Http\Controllers\Customer;
 use Illuminate\Support\Facades\Route;
@@ -29,7 +30,7 @@ Route::post('/Login', [Authentication::class, 'authenticate'])->name('login-user
 Route::post('/Logout', [Authentication::class, 'logout']);
 
 // Admin
-Route::get('/HomeAdmin', [Authentication::class, 'indexAdmin'])->middleware('is_admin');
+Route::get('/HomeAdmin', [Admin::class, 'indexAdmin'])->middleware('is_admin');
 
 // Service User
 Route::get('/Service', [Customer::class, 'service']);

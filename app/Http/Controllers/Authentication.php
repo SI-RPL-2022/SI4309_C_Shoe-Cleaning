@@ -15,13 +15,6 @@ class Authentication extends Controller
         return view('pages.home', ['pages' => 'Home']);
     }
 
-    public function indexAdmin()
-    {
-        $orders = DB::table('orders')->where('status_cucian', '!=', 'Selesai')->orderBy('created_at', 'asc')->get();
-
-        return view('pages.admin.home', ['pages' => 'Home'], compact('orders'));
-    }
-
     public function registerPage()
     {
         return view('pages.login&register.register');
