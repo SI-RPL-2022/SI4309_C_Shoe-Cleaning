@@ -52,6 +52,12 @@ body {
 }
 /* Home Admin */
 
+/* top bar */
+#product-heading {
+    font-size: 32px;
+    font-weight: 500;
+}
+
 /* Table */
 #table-head {
     font-size: 17px;

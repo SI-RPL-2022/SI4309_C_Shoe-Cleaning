@@ -16,6 +16,11 @@ class Admin extends Controller
 
     public function product()
     {
-        return view('pages.admin.addproduct', ['pages' => 'Product']);
+        return view('pages.admin.product', ['pages' => 'Product']);
+    }
+
+    public function addproduct()
+    {
+        return view('pages.admin.addproduct', ['pages' => 'Add Product']);
     }
 }
