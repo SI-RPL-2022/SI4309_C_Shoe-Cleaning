@@ -26,7 +26,30 @@
             <p>Belum ada produk silahkan tambah produk!</p>
         </div>
         @else
-        <p>ada produk</p>
+        <div class="row justify-content-start">
+            @foreach ($products as $index => $product)
+            <div class="col-3 pt-5 pb-5">
+                <img id="img-service" src="{{ asset('storage/' . $product->gambar) }}" alt="">
+            </div>
+            <div class="col-3 pt-5 pb-5">
+                <h4 id='ServiceTitle'>{{ $product->nama_produk }}</h4>
+                <h4 id='ServicePrice'>Rp. {{ $product->harga }}</h4>
+                <p id='ServiceDesc'>{{ $product->deskripsi }}</p>
+                <div>
+                    <form action="/Order" method="get">
+                        <!-- nama product -->
+                        <input type="hidden" name="service" value="Standart Clean">
+
+                        <!-- Button -->
+                        <div>
+                            <button id="buttonservice" type="submit" class="btn">Pesan
+                                Sekarang</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            @endforeach
+        </div>
         @endif
     </div>
 </div>

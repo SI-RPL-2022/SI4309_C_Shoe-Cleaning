@@ -70,6 +70,28 @@ body {
     width: 100px;
 }
 
+#ServiceTitle {
+    font-size: 30px;
+    font-weight: 500;
+    color: #504a4a;
+}
+
+#ServicePrice {
+    font-size: 23px;
+    color: #504a4a;
+}
+
+#ServiceDesc {
+    font-size: 14px;
+    color: #504a4a;
+}
+
+#buttonservice {
+    font-size: 15px;
+    background-color: #8f5bd8;
+    color: #ffffff;
+}
+
 /* Table */
 #table-head {
     font-size: 17px;
