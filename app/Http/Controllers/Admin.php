@@ -50,4 +50,11 @@ class Admin extends Controller
 
         return redirect('/Product')->with('delete', 'Produk Berhasil Dihapus!');
     }
+
+    public function editProduct(Request $request)
+    {
+        $id = $request->id;
+        $product = DB::table('products')->where('id', '=', $id)->get();
+        return view('pages.admin.editproduct', ['pages' => 'Edit Product'], compact('product'));
+    }
 }

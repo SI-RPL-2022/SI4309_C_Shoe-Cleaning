@@ -44,7 +44,8 @@
                 <p id='ServiceDesc' class="pb-3">{{ $product->deskripsi }}</p>
                 <div class="row">
                     <div class="col-4">
-                        <form action="">
+                        <form action="/editProduct" method="GET">
+                            <input type="hidden" name="id" value="{{ $product->id }}">
                             <button id="buttonservice" type="submit" class="btn btn-warning">Edit</button>
                         </form>
                     </div>

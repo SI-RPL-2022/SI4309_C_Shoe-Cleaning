@@ -34,6 +34,7 @@ Route::get('/HomeAdmin', [Admin::class, 'indexAdmin'])->middleware('is_admin');
 Route::get('/Product', [Admin::class, 'product'])->middleware('is_admin');
 Route::post('/Product', [Admin::class, 'deleteProduct'])->middleware('is_admin');
 Route::get('/addProduct', [Admin::class, 'addproduct'])->middleware('is_admin');
+Route::get('/editProduct', [Admin::class, 'editProduct'])->middleware('is_admin');
 Route::post('/addProduct', [Admin::class, 'storeProduct'])->middleware('is_admin');
 
 // Service User
