@@ -17,7 +17,8 @@ class Admin extends Controller
 
     public function product()
     {
-        return view('pages.admin.product', ['pages' => 'Product']);
+        $products = DB::table('products')->get();
+        return view('pages.admin.product', ['pages' => 'Product'], compact('products'));
     }
 
     public function addproduct()

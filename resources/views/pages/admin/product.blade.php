@@ -20,9 +20,14 @@
                 </div>
             </div>
         </div>
+
+        @if (count($products) === 0)
         <div class=" text-center pt-5 pb-5">
             <p>Belum ada produk silahkan tambah produk!</p>
         </div>
+        @else
+        <p>ada produk</p>
+        @endif
     </div>
 </div>
 @endsection
