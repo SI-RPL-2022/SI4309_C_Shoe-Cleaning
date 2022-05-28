@@ -1,6 +1,13 @@
 @extends('layouts.mainadmin')
 
 @section('content')
+@if(session()->has('success'))
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ session('success') }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+@endif
+
 <div>
     <div class="container">
         <div class="row justify-content-between pt-5 pb-5" id="product-bg">

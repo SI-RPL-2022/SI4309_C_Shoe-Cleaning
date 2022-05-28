@@ -23,4 +23,11 @@ class Admin extends Controller
     {
         return view('pages.admin.addproduct', ['pages' => 'Add Product']);
     }
+
+    public function storeProduct(Request $request)
+    {
+        $validatedData = $request->validate([
+            //
+        ]);
+    }
 }

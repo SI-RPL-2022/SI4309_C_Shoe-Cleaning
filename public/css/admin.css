@@ -55,8 +55,19 @@ body {
 /* top bar */
 #product-heading {
     font-size: 32px;
+    font-weight: 700;
+    color: #504a4a;
+}
+
+#text-field {
+    font-size: 18px;
     font-weight: 500;
     color: #504a4a;
+}
+
+/* Produk */
+#btn-form {
+    width: 100px;
 }
 
 /* Table */
