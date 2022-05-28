@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -26,8 +27,18 @@ class Admin extends Controller
 
     public function storeProduct(Request $request)
     {
+        // return $request->file('gambar')->store('product-images');
+
         $validatedData = $request->validate([
-            //
+            'gambar' => 'image|file|required',
+            'nama_produk' => 'required',
+            'harga' => 'required',
+            'deskripsi' => 'required'
         ]);
+
+        $validatedData['gambar'] = $request->file('gambar')->store('product-images');
+
+        Product::create($validatedData);
+        return redirect('/Product')->with('success', 'Produk Berhasil Ditambahkan!');
     }
 }

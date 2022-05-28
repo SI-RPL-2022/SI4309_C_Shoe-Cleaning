@@ -33,6 +33,7 @@ Route::post('/Logout', [Authentication::class, 'logout']);
 Route::get('/HomeAdmin', [Admin::class, 'indexAdmin'])->middleware('is_admin');
 Route::get('/Product', [Admin::class, 'product'])->middleware('is_admin');
 Route::get('/addProduct', [Admin::class, 'addproduct'])->middleware('is_admin');
+Route::post('/addProduct', [Admin::class, 'storeProduct'])->middleware('is_admin');
 
 // Service User
 Route::get('/Service', [Customer::class, 'service']);

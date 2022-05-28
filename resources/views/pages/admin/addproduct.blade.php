@@ -8,11 +8,11 @@
         </div>
     </div>
 
-    <form action="" method="post">
+    <form action="/addProduct" method="post" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
             <label class="form-label" id="text-field">Foto Produk</label>
-            <input class="form-control" type="file" name="foto_produk">
+            <input class="form-control" type="file" name="gambar">
         </div>
 
         <div class="mb-3">
@@ -22,12 +22,12 @@
 
         <div class="mb-3">
             <label class="form-label" id="text-field">Harga Produk</label>
-            <input type="text" class="form-control" name="harga_produk">
+            <input type="text" class="form-control" name="harga">
         </div>
 
         <div class="mb-3">
             <label class="form-label" id="text-field">Deskripsi Produk</label>
-            <textarea class="form-control" rows="3" name="description"></textarea>
+            <textarea class="form-control" rows="3" name="deskripsi"></textarea>
         </div>
 
         <div class="text-end pt-3 pb-5">
