@@ -43,22 +43,17 @@
         Berikut jasa yang kami tawarkan</p>
     <div class="container pb-5">
         <div class="row justify-content-around">
+            @if (count($products) === 0)
+            <p class="text-center pt-3 fw-bold text-danger">Belum Ada Produk!</p>
+            <p class="text-center">Silahkan Hubungi <b>Admin Shoe Cleaning!</b></p>
+            @else
+            @foreach ($products as $index => $product)
             <div class="col-3">
-                <img id="img-layanan" src="images/standart.png" alt="">
-                <h5 class="text-center pt-3" id="item-layanan">Standart Clean</h5>
+                <img id="img-layanan" src="{{ asset('storage/' . $product->gambar) }}" alt="">
+                <h5 class="text-center pt-3" id="item-layanan">{{ $product->nama_produk }}</h5>
             </div>
-            <div class="col-3">
-                <img id="img-layanan" src="images/deep.png" alt="">
-                <h5 class="text-center pt-3" id="item-layanan">Deep Clean</h5>
-            </div>
-            <div class="col-3">
-                <img id="img-layanan" src="images/premium.png" alt="">
-                <h5 class="text-center pt-3" id="item-layanan">Premium Clean</h5>
-            </div>
-            <div class="col-3">
-                <img id="img-layanan" src="images/weekend.png" alt="">
-                <h5 class="text-center pt-3" id="item-layanan">Weekend Clean</h5>
-            </div>
+            @endforeach
+            @endif
         </div>
     </div>
 </section>

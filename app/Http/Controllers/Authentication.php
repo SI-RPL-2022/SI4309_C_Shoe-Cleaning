@@ -12,7 +12,8 @@ class Authentication extends Controller
 {
     public function index()
     {
-        return view('pages.home', ['pages' => 'Home']);
+        $products = DB::table('products')->get();
+        return view('pages.home', ['pages' => 'Home'], compact('products'));
     }
 
     public function registerPage()
