@@ -33,19 +33,19 @@
             </div>
             <div class="col-3 pt-5 pb-5">
                 <h4 id='ServiceTitle'>{{ $product->nama_produk }}</h4>
-                <h4 id='ServicePrice'>Rp. {{ $product->harga }}</h4>
-                <p id='ServiceDesc'>{{ $product->deskripsi }}</p>
-                <div>
-                    <form action="/Order" method="get">
-                        <!-- nama product -->
-                        <input type="hidden" name="service" value="Standart Clean">
-
-                        <!-- Button -->
-                        <div>
-                            <button id="buttonservice" type="submit" class="btn">Pesan
-                                Sekarang</button>
-                        </div>
-                    </form>
+                <h4 id='ServicePrice' class="pb-2">Rp. {{ $product->harga }}</h4>
+                <p id='ServiceDesc' class="pb-3">{{ $product->deskripsi }}</p>
+                <div class="row">
+                    <div class="col-4">
+                        <form action="">
+                            <button id="buttonservice" type="submit" class="btn btn-warning">Edit</button>
+                        </form>
+                    </div>
+                    <div class="col-4">
+                        <form action="">
+                            <button id="buttonservice" type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </div>
                 </div>
             </div>
             @endforeach

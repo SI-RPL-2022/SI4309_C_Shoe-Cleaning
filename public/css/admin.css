@@ -88,8 +88,7 @@ body {
 
 #buttonservice {
     font-size: 15px;
-    background-color: #8f5bd8;
-    color: #ffffff;
+    width: 100px;
 }
 
 /* Table */
