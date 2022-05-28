@@ -42,4 +42,12 @@ class Admin extends Controller
         Product::create($validatedData);
         return redirect('/Product')->with('success', 'Produk Berhasil Ditambahkan!');
     }
+
+    public function deleteProduct(Request $request)
+    {
+        $product = Product::find($request->id);
+        $product->delete();
+
+        return redirect('/Product')->with('delete', 'Produk Berhasil Dihapus!');
+    }
 }

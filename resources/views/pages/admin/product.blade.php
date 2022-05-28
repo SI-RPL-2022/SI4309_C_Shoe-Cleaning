@@ -8,6 +8,13 @@
 </div>
 @endif
 
+@if(session()->has('delete'))
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ session('delete') }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+@endif
+
 <div>
     <div class="container">
         <div class="row justify-content-between pt-5 pb-5" id="product-bg">
@@ -42,7 +49,9 @@
                         </form>
                     </div>
                     <div class="col-4">
-                        <form action="">
+                        <form action="/Product" method="POST">
+                            @csrf
+                            <input type="hidden" name="id" value="{{ $product->id }}">
                             <button id="buttonservice" type="submit" class="btn btn-danger">Delete</button>
                         </form>
                     </div>
