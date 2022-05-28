@@ -57,4 +57,33 @@ class Admin extends Controller
         $product = DB::table('products')->where('id', '=', $id)->get();
         return view('pages.admin.editproduct', ['pages' => 'Edit Product'], compact('product'));
     }
+
+    public function storeeditProduct(Request $request)
+    {
+        $id = $request->id;
+        $validatedData = $request->validate([
+            'id' => 'required',
+            'gambar' => 'image|file',
+            'nama_produk' => 'required',
+            'harga' => 'required',
+            'deskripsi' => 'required'
+        ]);
+
+        if ($request->file('gambar')) {
+            $validatedData['gambar'] = $request->file('gambar')->store('product-images');
+        }
+        
+        $validatedData = Product::find($id);
+        $validatedData->id = $id;
+        $validatedData->nama_produk = $request->nama_produk;
+        if ($request->file('gambar')) {
+            $validatedData->gambar = $request->file('gambar')->store('product-images');
+        }
+        $validatedData->harga = $request->harga;
+        $validatedData->deskripsi = $request->deskripsi;
+        $validatedData->save();
+
+        return redirect('/Product')->with('edit', 'Produk Berhasil Diedit!');
+
+    }
 }
