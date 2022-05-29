@@ -4,6 +4,10 @@
 
 <section>
     <div class="container pt-5 pb-5">
+        @if (count($products) === 0)
+        <p class="text-center pt-3 fw-bold text-danger">Belum Ada Produk!</p>
+        <p class="text-center">Silahkan Hubungi <b>Admin Shoe Cleaning!</b></p>
+        @else
         <div class="row justify-content-start">
             @foreach ($products as $index => $product)
             <div class="col-3">
@@ -37,6 +41,7 @@
             </div>
             @endforeach
         </div>
+        @endif
     </div>
 </section>
 

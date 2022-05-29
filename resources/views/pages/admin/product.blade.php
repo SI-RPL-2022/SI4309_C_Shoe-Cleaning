@@ -36,8 +36,8 @@
         </div>
 
         @if (count($products) === 0)
-        <div class=" text-center pt-5 pb-5">
-            <p>Belum ada produk silahkan tambah produk!</p>
+        <div class="text-center pt-5 pb-5">
+            <p><b class="text-danger">Belum ada</b> produk silahkan tambah produk!</p>
         </div>
         @else
         <div class="row justify-content-start">
