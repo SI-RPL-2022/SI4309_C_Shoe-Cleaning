@@ -27,6 +27,7 @@ Route::post('/Register', [Authentication::class, 'store']);
 // User
 Route::get('/Login', [Authentication::class, 'loginPage'])->middleware('guest');
 Route::post('/Login', [Authentication::class, 'authenticate'])->name('login-user');
+Route::get('/OrderSaya', [MainController::class, 'orderSaya'])->middleware('auth');
 Route::post('/Logout', [Authentication::class, 'logout']);
 
 // Admin
