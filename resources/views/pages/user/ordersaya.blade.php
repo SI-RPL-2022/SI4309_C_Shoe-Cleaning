@@ -44,3 +44,20 @@
                             <div class="pt-2"></div>
                             <form action="/Invoice" method="get">
                                 <input type="hidden" name="product" value="{{ $order->nama_produk }}">
+                                <input type="hidden" name="id" value="{{ $order->id }}">
+                                <button class="btn btn-warning" type="submit" id="detail-button">Detail</button>
+                            </form>
+                        </td>
+                        <td class="text-center align-middle" id="table-item">
+                            {{ date('d-M-Y', strtotime($order->created_at)) }}
+                        </td>
+                        <td class="text-end align-middle" id="table-item">{{ $order->status_cucian }}</td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+@endif
+@endsection
