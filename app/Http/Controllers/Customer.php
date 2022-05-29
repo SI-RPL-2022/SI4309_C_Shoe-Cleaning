@@ -46,4 +46,13 @@ class Customer extends Controller
         Order::create($validatedData);
         return redirect('/OrderSaya')->with('success', 'Order Berhasil!');
     }
+
+    public function orderSaya()
+    {
+        $user = Auth::user();
+        $id = $user->id;
+        $orders = DB::table('orders')->where('user_id', '=', $id)->orderBy('created_at', 'asc')->get();
+
+        return view('pages.user.ordersaya', ['pages' => 'Order Saya'], compact('orders'));
+    }
 }
