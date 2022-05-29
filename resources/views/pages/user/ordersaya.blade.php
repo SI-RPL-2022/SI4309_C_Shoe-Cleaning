@@ -21,3 +21,26 @@
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 @endif
+<section>
+    <div class="container pt-5 pb-5">
+        <h4 id="ordersaya-title">Pesanan Saya</h4>
+        <p id="ordersaya-desc" class="pt-3">Layanan ShoeCleaning sudah ditambahkan ke keranjang belanja anda</p>
+
+        <div class="col pt-5 pb-5">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="pb-3" id="table-head">Nama Produk</th>
+                        <th scope="col" class="text-center pb-3" id="table-head">Tanggal Pemesanan</th>
+                        <th scope="col" class="text-end pb-3" id="table-head">Status Pesanan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($orders as $index => $order)
+                    <tr>
+                        <td class="pt-3 pb-3 align-middle" id="table-item">
+                            {{ $order->nama_produk }}
+                            <br>
+                            <div class="pt-2"></div>
+                            <form action="/Invoice" method="get">
+                                <input type="hidden" name="product" value="{{ $order->nama_produk }}">
