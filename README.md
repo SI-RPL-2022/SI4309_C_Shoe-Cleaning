@@ -1,6 +1,30 @@
 # TUGAS REKAYASA PERANGKAT LUNAK 2022
+# Shoe Cleaning Website
+## Wijaya Makmur Team
 
-## Project Team
+| Nama | Role |
+| --- | --- |
+| Syariif Abdurrahman Bathik | Web Developer |
+| Ryandi Yorsinda Anggoro | UI/UX Designer |
+| Mubeth Praditya | UI/UX Designer |
+| Hasrinaldi Hasniman Harun | System Analyst |
+| Hadi Noerddien Jayanto | Data Engineer |
+
+How to Run Project
+ 
+1. composer Update 
+2. cp .env.example .env 
+3. Pada file env ganti FILESYSTEM_DISK=local menjadi FILESYSTEM_DISK=public 
+![image](https://user-images.githubusercontent.com/50273924/170905195-9e06ea22-6c89-4904-9086-56598ba6750b.png)
+
+4. php artisan key:generate
+5. Pada env ubah DB_DATABASE=laravel menjadi DB_DATABASE=shoe_cleaning or etc
+![image](https://user-images.githubusercontent.com/50273924/170905696-e838a3ba-a9e7-4eb8-8b44-f756e0673583.png)
+ 
+6. create database shoe_cleaning
+7. php artisan migrate
+8. php artisan storage:link
+9. php artisan serve
 
 
 
