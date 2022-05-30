@@ -10,7 +10,7 @@
 | Hasrinaldi Hasniman Harun | System Analyst |
 | Hadi Noerddien Jayanto | Data Engineer |
 
-How to Run Project
+### How to Run Project
  
 1. composer Update 
 2. cp .env.example .env 
@@ -25,6 +25,7 @@ How to Run Project
 7. php artisan migrate
 8. php artisan storage:link
 9. php artisan serve
+10. Enjoy :)
 
 
 
