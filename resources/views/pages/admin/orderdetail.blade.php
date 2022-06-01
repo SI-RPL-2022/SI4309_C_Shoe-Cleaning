@@ -63,6 +63,14 @@
                                         <option value="Dalam Proses Pembersihan">Dalam Proses Pembersihan</option>
                                         <option value="Selesai">Selesai</option>
                                     </select>
+                                </td>
+                                </tr>
+                    </tbody>
+                </table>
+                <div class="pt-3"></div>
+                <hr style="color: #504a4a; height: 2px;">
+            </div>
+        </div>
                     </tbody>
                 </table>
                 <div class="pt-3"></div>
