@@ -105,6 +105,47 @@ body {
 }
 /* Table */
 
+/* Order Detail */
+#invoice-title {
+    font-family: "Londrina Solid", cursive;
+    font-size: 36px;
+    color: #8f5bd8;
+}
+
+#table-left {
+    font-size: 18px;
+    font-weight: 500;
+    color: #a6a4a4;
+}
+
+#table-right {
+    font-size: 18px;
+    font-weight: 500;
+    color: #504a4a;
+}
+
+#kasir {
+    font-size: 18px;
+    font-weight: 500;
+    color: #504a4a;
+}
+
+#bottom-text-invoice {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a6a4a4;
+}
+
+#span-bottom-invoice {
+    color: #8f5bd8;
+}
+
+#update-button {
+    background-color: #8f5bd8;
+    color: #ffffff;
+}
+/* Order Detail */
+
 /* Footer */
 #footer {
     background: #8f5bd8;
