@@ -38,6 +38,8 @@ Route::get('/addProduct', [Admin::class, 'addproduct'])->middleware('is_admin');
 Route::get('/editProduct', [Admin::class, 'editProduct'])->middleware('is_admin');
 Route::post('/editProduct', [Admin::class, 'storeeditProduct'])->middleware('is_admin');
 Route::post('/addProduct', [Admin::class, 'storeProduct'])->middleware('is_admin');
+Route::get('/OrderDetail', [Admin::class, 'orderDetail'])->middleware('is_admin');
+Route::post('/UpdateOrder/{id}', [Admin::class, 'updateOrder'])->name('updateOrder')->middleware('is_admin');
 
 // Service User
 Route::get('/Service', [Customer::class, 'service']);
