@@ -43,6 +43,19 @@
                             <td id="table-left" class="col-7 pt-2 pb-2">Total Harga</td>
                             <td id="table-right">{{ $orders->harga }}</td>
                         </tr>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Metode Pembayaran</td>
+                            <td id="table-right">{{ $orders->pembayaran }}</td>
+                        </tr>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Catatan</td>
+                            <td id="table-right">{{ $orders->catatan }}</td>
+                        </tr>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-3 pb-3">Status Cucian</td>
+                            <td id="table-right">
+                                <form action="{{ route('updateOrder',$orders->id) }}" method="post">
+                                    @csrf
                     </tbody>
                 </table>
                 <div class="pt-3"></div>
