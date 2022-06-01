@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section>
+<section section style="background-image: url('images/background.png');">
                 <table>
                     <tbody>
                         <tr>
