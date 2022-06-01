@@ -44,7 +44,7 @@
                         </tr>
                         <tr>
                             <td id="table-left" class="col-7 pt-2 pb-2">Harga Satuan</td>
-                            <td id="table-right"></td>
+                            <td id="table-right">{{$orders -> harga}}</td>
                         </tr>
                         <tr>
                             <td id="table-left" class="col-7 pt-2 pb-2">Total Harga</td>
