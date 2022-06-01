@@ -3,6 +3,10 @@
 @section('content')
 
 <section section style="background-image: url('images/background.png');">
+    <div class="container pt-5 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <h4 id="invoice-title" class="pb-3">ShoeCleaning <span id="span-invoice">Invoice</span></h4>
                 <table>
                     <tbody>
                         <tr>
