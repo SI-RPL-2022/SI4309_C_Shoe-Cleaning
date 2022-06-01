@@ -87,5 +87,14 @@
                 </form>
             </div>
         </div>
+
+        <div class="row justify-content-end">
+            <div class="col-1">
+                <a href="/HomeAdmin" class="btn btn-warning">Back</a>
+            </div>
+            <div class="col-3">
+                <button class="btn" id="update-button">Update</button>
+                </form>
+            </div>
+        </div>
 </section>
-@endsection
