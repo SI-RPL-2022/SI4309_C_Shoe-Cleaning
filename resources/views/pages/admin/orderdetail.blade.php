@@ -20,6 +20,7 @@
                         <tr>
                             <td id="table-left" class="col-7 pt-2 pb-2">Nama Produk</td>
                             <td id="table-right">{{ $orders->nama_produk }}</td>
+                        </tr>
                         <tr>
                             <td id="table-left" class="col-7 pt-2 pb-2">Tanggal Pemesanan</td>
                             <td id="table-right">{{ date('d-M-Y', strtotime($orders->created_at)) }}</td>
@@ -27,6 +28,7 @@
                         <tr>
                             <td id="table-left" class="col-7 pt-2 pb-2">Tanggal Pickup</td>
                             <td id="table-right">{{ date('d-M-Y H:i:s', strtotime($orders->tanggal_pickup)) }}</td>
+                        </tr>
                         <tr>
                             <td id="table-left" class="col-7 pt-2 pb-2">Alamat Penjemputan</td>
                             <td id="table-right">{{ $orders->alamat_penjemputan }}</td>
@@ -63,28 +65,12 @@
                                         <option value="Dalam Proses Pembersihan">Dalam Proses Pembersihan</option>
                                         <option value="Selesai">Selesai</option>
                                     </select>
-                                </td>
-                                </tr>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="pt-3"></div>
                 <hr style="color: #504a4a; height: 2px;">
-            </div>
-        </div>
-                    </tbody>
-                </table>
-                <div class="pt-3"></div>
-                <hr style="color: #504a4a; height: 2px;">
-            </div>
-        </div>
-
-        <div class="row justify-content-end">
-            <div class="col-1">
-                <a href="/HomeAdmin" class="btn btn-warning">Back</a>
-            </div>
-            <div class="col-3">
-                <button class="btn" id="update-button">Update</button>
-                </form>
             </div>
         </div>
 
@@ -98,3 +84,4 @@
             </div>
         </div>
 </section>
+@endsection
