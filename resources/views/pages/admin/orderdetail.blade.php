@@ -27,6 +27,14 @@
                         <tr>
                             <td id="table-left" class="col-7 pt-2 pb-2">Tanggal Pickup</td>
                             <td id="table-right">{{ date('d-M-Y H:i:s', strtotime($orders->tanggal_pickup)) }}</td>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Alamat Penjemputan</td>
+                            <td id="table-right">{{ $orders->alamat_penjemputan }}</td>
+                        </tr>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Alamat Pengiriman</td>
+                            <td id="table-right">{{ $orders->alamat_pengiriman }}</td>
+                        </tr>
                         </tr>
                         </tr>
                         <tr>
