@@ -20,6 +20,14 @@
                         <tr>
                             <td id="table-left" class="col-7 pt-2 pb-2">Nama Produk</td>
                             <td id="table-right">{{ $orders->nama_produk }}</td>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Tanggal Pemesanan</td>
+                            <td id="table-right">{{ date('d-M-Y', strtotime($orders->created_at)) }}</td>
+                        </tr>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Tanggal Pickup</td>
+                            <td id="table-right">{{ date('d-M-Y H:i:s', strtotime($orders->tanggal_pickup)) }}</td>
+                        </tr>
                         </tr>
                         <tr>
                     </tbody>
