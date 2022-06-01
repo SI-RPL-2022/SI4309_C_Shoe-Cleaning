@@ -45,3 +45,4 @@ Route::post('/UpdateOrder/{id}', [Admin::class, 'updateOrder'])->name('updateOrd
 Route::get('/Service', [Customer::class, 'service']);
 Route::get('/Order', [Customer::class, 'order'])->middleware('auth');
 Route::post('/Order', [Customer::class, 'store'])->middleware('auth')->name('checkouts');
+Route::get('/Invoice', [Customer::class, 'invoice'])->middleware('auth');
