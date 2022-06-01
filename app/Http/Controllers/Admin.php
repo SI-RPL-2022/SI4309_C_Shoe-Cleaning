@@ -86,4 +86,12 @@ class Admin extends Controller
         return redirect('/Product')->with('edit', 'Produk Berhasil Diedit!');
 
     }
+
+    public function orderDetail(Request $request)
+    {
+        $id = $request->get('id');
+        $orders = Order::find($id);
+
+        return view('pages.admin.orderdetail', ['pages' => 'Order Detail'], compact('orders'));
+    }
 }
