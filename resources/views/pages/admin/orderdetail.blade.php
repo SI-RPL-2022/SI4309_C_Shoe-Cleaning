@@ -35,9 +35,14 @@
                             <td id="table-left" class="col-7 pt-2 pb-2">Alamat Pengiriman</td>
                             <td id="table-right">{{ $orders->alamat_pengiriman }}</td>
                         </tr>
-                        </tr>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Jumlah Sepatu</td>
+                            <td id="table-right">{{ $orders->jumlah }}</td>
                         </tr>
                         <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Total Harga</td>
+                            <td id="table-right">{{ $orders->harga }}</td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="pt-3"></div>
