@@ -74,7 +74,7 @@
 
         <div class="row justify-content-center">
             <div class="col-9">
-                <p id="bottom-text-invoice">Invoice ini sah dan diproses oleh komputer <br>
+                <p id="bottom-text-invoice">Invoice ini sah dan diproses oleh komputer dan diproses langsung oleh admin<br>
                     Silahkan hubungi <span id="span-bottom-invoice">ShoeCleaning Help</span> apabila anda membutuhkan
                     bantuan.</p>
             </div>
