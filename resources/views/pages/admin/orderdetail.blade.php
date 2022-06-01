@@ -56,6 +56,13 @@
                             <td id="table-right">
                                 <form action="{{ route('updateOrder',$orders->id) }}" method="post">
                                     @csrf
+                                    <select class="form-select" id="table-right" name="status_cucian">
+                                        <option selected>{{ $orders->status_cucian }}</option>
+                                        <option value="Akan Dijemput">Akan Dijemput</option>
+                                        <option value="Diambil">Diambil</option>
+                                        <option value="Dalam Proses Pembersihan">Dalam Proses Pembersihan</option>
+                                        <option value="Selesai">Selesai</option>
+                                    </select>
                     </tbody>
                 </table>
                 <div class="pt-3"></div>
