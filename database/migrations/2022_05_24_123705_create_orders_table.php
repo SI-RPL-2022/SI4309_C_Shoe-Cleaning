@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('nama_pemesan');
             $table->string('no_hp');
             $table->string('catatan')->default('-')->nullable();
+            $table->string('ulasan')->default('-')->nullable();
             $table->dateTime('tanggal_pickup');
             $table->string('alamat_penjemputan');
             $table->string('alamat_pengiriman');
