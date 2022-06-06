@@ -47,6 +47,14 @@
                                 <input type="hidden" name="id" value="{{ $order->id }}">
                                 <button class="btn btn-warning" type="submit" id="detail-button">Detail</button>
                             </form>
+                            @if (($order->status_cucian) == 'Selesai')
+                            <div class="pt-2"></div>
+                            <form action="" method="get">
+                                <input type="hidden" name="product" value="{{ $order->nama_produk }}">
+                                <input type="hidden" name="id" value="{{ $order->id }}">
+                                <button class="btn" type="submit" id="ulasan-button">Berikan Ulasan</button>
+                            </form>
+                            @endif
                         </td>
                         <td class="text-center align-middle" id="table-item">
                             {{ date('d-M-Y', strtotime($order->created_at)) }}

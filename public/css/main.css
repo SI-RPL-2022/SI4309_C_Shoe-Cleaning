@@ -319,6 +319,13 @@ body {
     color: #ffffff;
 }
 
+#ulasan-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #8f5bd8;
+}
+
 /* Invoice */
 #invoice-title {
     font-family: "Londrina Solid", cursive;
