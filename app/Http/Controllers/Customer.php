@@ -62,16 +62,6 @@ class Customer extends Controller
 
         $product = $request->get('product');
 
-        // if ($product === 'Standart Clean') {
-        //     $satuan = 30000;
-        // } elseif ($product === 'Deep Clean') {
-        //     $satuan = 40000;
-        // } elseif ($product === 'Premium Clean') {
-        //     $satuan = 45000;
-        // }elseif ($product === 'Weekend Clean') {
-        //     $satuan = 50000;
-        // }
-
         return view('pages.user.invoice', ['pages' => 'Invoice'], compact('orders'));
     }
 }
