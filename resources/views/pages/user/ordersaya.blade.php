@@ -49,7 +49,7 @@
                             </form>
                             @if (($order->status_cucian) == 'Selesai')
                             <div class="pt-2"></div>
-                            <form action="" method="get">
+                            <form action="/Ulasan" method="get">
                                 <input type="hidden" name="product" value="{{ $order->nama_produk }}">
                                 <input type="hidden" name="id" value="{{ $order->id }}">
                                 <button class="btn" type="submit" id="ulasan-button">Berikan Ulasan</button>

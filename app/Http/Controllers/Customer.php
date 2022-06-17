@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Order;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
@@ -63,5 +64,22 @@ class Customer extends Controller
         $product = $request->get('product');
 
         return view('pages.user.invoice', ['pages' => 'Invoice'], compact('orders'));
+    }
+
+    public function ulasan(Request $request)
+    {
+        $id = $request->get('id');
+        $data = Order::find($id);
+        $product = $request->get('product'); 
+
+        $product = DB::table('products')->select('deskripsi')->where('nama_produk', '=', $product)->get();
+        $desc = $product[0]->deskripsi;
+
+        // dd($desc);
+        
+
+        // $product = $request->get('product');
+
+        return view('pages.user.ulasan', ['pages' => 'Ulasan'])->with(compact('data'))->with(compact('desc'));
     }
 }
