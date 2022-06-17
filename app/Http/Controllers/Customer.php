@@ -74,12 +74,23 @@ class Customer extends Controller
 
         $product = DB::table('products')->select('deskripsi')->where('nama_produk', '=', $product)->get();
         $desc = $product[0]->deskripsi;
-
-        // dd($desc);
         
-
-        // $product = $request->get('product');
-
         return view('pages.user.ulasan', ['pages' => 'Ulasan'])->with(compact('data'))->with(compact('desc'));
+    }
+
+    public function store_ulasan(Request $request)
+    {
+        $id = $request->id;
+        $validatedData = $request->validate([
+            'id' => 'required',
+            'ulasan' => 'required'
+        ]);
+
+        $validatedData = Order::find($id);
+        $validatedData->id = $id;
+        $validatedData->ulasan = $request->ulasan;
+        $validatedData->save();
+
+        return redirect('/OrderSaya')->with('success', 'Ulasan Berhasil Dikirim!');
     }
 }
