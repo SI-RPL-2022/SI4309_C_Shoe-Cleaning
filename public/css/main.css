@@ -366,3 +366,21 @@ body {
 #span-bottom-invoice {
     color: #8f5bd8;
 }
+
+/* ulasan */
+#ulasan-heading {
+    color: #504a4a;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#ulasan-subheading {
+    color: #504a4a;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+#ulasan-text {
+    color: #a6a4a4;
+    font-size: 14px;
+}
