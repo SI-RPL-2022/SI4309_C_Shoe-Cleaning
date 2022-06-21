@@ -49,7 +49,8 @@
             @else
             @foreach ($products as $index => $product)
             <div class="col-3">
-                <img id="img-layanan" src="{{ asset('storage/' . $product->gambar) }}" alt="">
+                <img id="img-layanan" src="{{ asset('storage/' . $product->gambar) }}" alt="" width='292px'
+                    weight='383px'>
                 <h5 class="text-center pt-3" id="item-layanan">{{ $product->nama_produk }}</h5>
             </div>
             @endforeach

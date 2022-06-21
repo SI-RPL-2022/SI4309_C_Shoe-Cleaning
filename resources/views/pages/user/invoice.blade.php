@@ -54,6 +54,10 @@
                             <td id="table-left" class="col-7 pt-2 pb-2">Metode Pembayaran</td>
                             <td id="table-right">{{ $orders->pembayaran }}</td>
                         </tr>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Ulasan</td>
+                            <td id="table-right">{{ $orders->ulasan }}</td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="pt-3"></div>
@@ -74,7 +78,8 @@
 
         <div class="row justify-content-center">
             <div class="col-9">
-                <p id="bottom-text-invoice">Invoice ini sah dan diproses oleh komputer dan diproses langsung oleh admin<br>
+                <p id="bottom-text-invoice">Invoice ini sah dan diproses oleh komputer dan diproses langsung oleh
+                    admin<br>
                     Silahkan hubungi <span id="span-bottom-invoice">ShoeCleaning Help</span> apabila anda membutuhkan
                     bantuan.</p>
             </div>

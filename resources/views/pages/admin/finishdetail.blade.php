@@ -49,6 +49,10 @@
                             <td id="table-left" class="col-7 pt-2 pb-2">Metode Pembayaran</td>
                             <td id="table-right">{{ $orders->pembayaran }}</td>
                         </tr>
+                        <tr>
+                            <td id="table-left" class="col-7 pt-2 pb-2">Ulasan</td>
+                            <td id="table-right">{{ $orders->ulasan }}</td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="pt-3"></div>

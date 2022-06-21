@@ -43,7 +43,8 @@
         <div class="row justify-content-start">
             @foreach ($products as $index => $product)
             <div class="col-3 pt-5 pb-5">
-                <img id="img-service" src="{{ asset('storage/' . $product->gambar) }}" alt="">
+                <img id="img-service" src="{{ asset('storage/' . $product->gambar) }}" alt="" width='292px'
+                    weight='383px'>
             </div>
             <div class="col-3 pt-5 pb-5">
                 <h4 id='ServiceTitle'>{{ $product->nama_produk }}</h4>
