@@ -104,4 +104,11 @@ class Admin extends Controller
 
         return redirect('/HomeAdmin')->with('success', 'Data Order Berhasil Diupdate!');
     }
+
+    public function selesai()
+    {
+        $orders = DB::table('orders')->where('status_cucian', '=', 'Selesai')->orderBy('created_at', 'asc')->get();
+
+        return view('pages.admin.finish', ['pages' => 'Pesanan Selesai'], compact('orders'));
+    }
 }
