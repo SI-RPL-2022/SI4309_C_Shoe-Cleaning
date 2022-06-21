@@ -119,4 +119,9 @@ class Admin extends Controller
 
         return view('pages.admin.finishdetail', ['pages' => 'Finish Order Detail'], compact('orders'));
     }
+    
+    public function profileAdmin()
+    {
+        return view('pages.admin.profile', ['pages' => 'Profile']);
+    }
 }
