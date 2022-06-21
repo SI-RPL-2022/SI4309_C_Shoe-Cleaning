@@ -105,4 +105,24 @@ class Admin extends Controller
 
         return redirect('/HomeAdmin')->with('success', 'Data Order Berhasil Diupdate!');
     }
+
+    public function selesai()
+    {
+        $orders = DB::table('orders')->where('status_cucian', '=', 'Selesai')->orderBy('created_at', 'asc')->get();
+
+        return view('pages.admin.finish', ['pages' => 'Pesanan Selesai'], compact('orders'));
+    }
+
+    public function finishDetail(Request $request)
+    {
+        $id = $request->get('id');
+        $orders = Order::find($id);
+
+        return view('pages.admin.finishdetail', ['pages' => 'Finish Order Detail'], compact('orders'));
+    }
+    
+    public function profileAdmin()
+    {
+        return view('pages.admin.profile', ['pages' => 'Profile']);
+    }
 }
