@@ -172,3 +172,10 @@ body {
     color: #ffffff;
 }
 /* Footer */
+
+/* Profile */
+#profile-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #504a4a;
+}
