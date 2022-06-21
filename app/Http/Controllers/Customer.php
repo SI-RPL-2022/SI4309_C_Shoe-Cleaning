@@ -15,6 +15,11 @@ class Customer extends Controller
         $products = DB::table('products')->get();
         return view('pages.user.service', ['pages' => 'Service'], compact('products'));
     }
+    
+    public function profile()
+    {
+        return view('pages.user.profile', ['pages' => 'Profile']);
+    }
 
     public function order(Request $request)
     {
