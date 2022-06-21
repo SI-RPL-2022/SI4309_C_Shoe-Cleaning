@@ -111,4 +111,12 @@ class Admin extends Controller
 
         return view('pages.admin.finish', ['pages' => 'Pesanan Selesai'], compact('orders'));
     }
+
+    public function finishDetail(Request $request)
+    {
+        $id = $request->get('id');
+        $orders = Order::find($id);
+
+        return view('pages.admin.finishdetail', ['pages' => 'Finish Order Detail'], compact('orders'));
+    }
 }
