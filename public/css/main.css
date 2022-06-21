@@ -384,3 +384,47 @@ body {
     color: #a6a4a4;
     font-size: 14px;
 }
+
+/* Profile */
+#profile-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #504a4a;
+}
+
+/* MyOrder */
+#cuci-button {
+    font-size: 15px;
+    background-color: #8f5bd8;
+    color: #ffffff;
+}
+
+#ordersaya-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #504a4a;
+}
+
+#ordersaya-desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: #a6a4a4;
+}
+
+#table-head {
+    font-size: 18px;
+    font-weight: 700;
+    color: #504a4a;
+}
+
+#table-item {
+    font-size: 18px;
+    font-weight: 500;
+    color: #504a4a;
+}
+
+#detail-button {
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+}
