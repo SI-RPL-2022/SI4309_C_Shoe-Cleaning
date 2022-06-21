@@ -43,6 +43,7 @@ Route::post('/addProduct', [Admin::class, 'storeProduct'])->middleware('is_admin
 Route::get('/OrderDetail', [Admin::class, 'orderDetail'])->middleware('is_admin');
 Route::post('/UpdateOrder/{id}', [Admin::class, 'updateOrder'])->name('updateOrder')->middleware('is_admin');
 Route::get('/DataSelesai', [Admin::class, 'selesai'])->middleware('is_admin');
+Route::get('/FinishDetail', [MainController::class, 'finishDetail'])->middleware('is_admin');
 
 // Service User
 Route::get('/Service', [Customer::class, 'service']);
