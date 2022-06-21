@@ -48,3 +48,4 @@ Route::get('/Service', [Customer::class, 'service']);
 Route::get('/Order', [Customer::class, 'order'])->middleware('auth');
 Route::post('/Order', [Customer::class, 'store'])->middleware('auth')->name('checkouts');
 Route::get('/Invoice', [Customer::class, 'invoice'])->middleware('auth');
+Route::get('/Profile', [Customer::class, 'profile'])->middleware('auth');
